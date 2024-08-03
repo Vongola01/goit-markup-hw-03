@@ -174,7 +174,7 @@ img{
 
 /* #region advantage */
 
-.Advantages{
+.advantages{
         padding-top: 120px;
             padding-bottom: 120px;
 }
@@ -273,6 +273,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
 }
 
 /* #endregion team */
