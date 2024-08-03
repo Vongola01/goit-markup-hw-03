@@ -11,17 +11,18 @@ a{
 
 ul{
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,ul{
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+h1,h2,h3,h4,h5,h6,p{
+   margin-top: 0;
+   margin-bottom: 0;
+}
+.container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /* #endregion body */
@@ -56,9 +57,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 152px;
 }
 
 .span-head{
@@ -104,12 +102,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 /* #endregion header */
 
-
 /* #region hero */
 
 .hero-section{
     background-color: #2e2f42;
     color: white;
+    
 }
 
 .title{
@@ -140,6 +138,19 @@ h1,h2,h3,h4,h5,h6,p,ul{
 /* #endregion hero */
 
 /* #region advantage */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .title-advantage{
     font-weight: 500;
@@ -184,8 +195,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
 /* #endregion team */
 
 /* #region portfolio */
-
+.portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .title-portfolio{
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -193,11 +208,30 @@ h1,h2,h3,h4,h5,h6,p,ul{
     text-align: center;
     text-transform: capitalize;
 }
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.portfolio-list .team-style{
+    width: calc((100% - 24px * 2)/3);
+}
+.title-advantage{
+    margin-bottom: 8px;
+}
+.portfolio-box{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
+}
 /* #endregion portfolio */
 
 /* #region footer */
 .foot{
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .span-foot{
@@ -208,6 +242,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    max-width: 264px;
+
+}
+.footer-logo{
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 
