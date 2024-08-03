@@ -25,6 +25,9 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0 auto;
 }
 
+img{
+    display: block;
+}
 /* #endregion body */
 
 /* #region header */
@@ -32,6 +35,7 @@ h1,h2,h3,h4,h5,h6,p{
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 .header-container{
     display: flex;
@@ -158,6 +162,7 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
+    border: none;
 }
 
 .hero-button:hover,
@@ -205,6 +210,7 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 .title-advantage-item {
@@ -257,6 +263,7 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 .title-team-list {
